@@ -1,0 +1,9 @@
+.opensource-block {
+	display: flex;
+	align-items: center;
+}
+
+.opensource {
+	height: 20px;
+	width: 20px;
+}

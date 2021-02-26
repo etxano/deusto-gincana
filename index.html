@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="js" lang="es" dir="ltr" style="min-height: 880px;"
+	prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Sergio Romero id:1542" />
+<meta name="description"
+	content="Juego en forma de gincana que te desafía a registrarte en un proceso de selección de personal" />
+<script type="text/javascript"
+	src="./js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+<script type="text/javascript" src="./js/helpChat.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
+<link rel="canonical" href="/home">
+<link rel="stylesheet" type="text/css"
+	href="./css/page.css">
+<link rel="stylesheet" type="text/css"
+	href="./css/theme.css">
+<link rel="stylesheet" type="text/css"
+	href="./css/nosotrosNormalize.css">
+<link rel="stylesheet" type="text/css"
+	href="./css/nosotrosStyles.css">
+<link rel="stylesheet" type="text/css"
+	href="./css/helpChat.css">
+<link rel="stylesheet" type="text/css"
+	href="./css/index.css">
+<link rel="stylesheet" type="text/css"
+	href="./css/footer.css">
+<link rel="profile" href="http://www.w3.org/1999/xhtml/vocab">
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="width">
+<meta http-equiv="cleartype" content="on">
+<meta name="viewport" content="width=device-width">
+<title>¡Bienvenido al nuevo portal Nosotros! | Nosotros</title>
+</head>
+
+<body
+	class="html front not-logged-in page-node page-node- page-node-955 node-type-page lightbox-processed"
+	style="background-image: linear-gradient(to bottom right, white, #9ba4a9);">
+	<div class="l-page has-one-sidebar has-sidebar-second">
+		<header class="l-header" style="background: transparent !important;"
+			role="banner">
+			<div class="l-branding">
+				<a href="/" title="Inicio" rel="home" class="site-logo"><img
+					src="./assets/svg/logo-empresa.png" alt="Inicio"
+					class="copyprevention-processed"
+					style="width: 236px; height: 116px"></a>
+			</div>
+		</header>
+		<div class="question-logo-block">
+			<i class="far fa-question-circle question-logo js-help-open"></i>
+			<div id="helpchat" class="help-chat">
+				<div class="help-assistant-block">
+					<p style="position: relative">
+						<span class="help-assistant-online"></span>Asistente <i
+							class="fas fa-compress-alt help-assistant-minimize js-minimize"></i>
+					</p>
+				</div>
+				<div class="help-text-block" id="helptext">
+					<div class="help-message-block">
+						<img typeof="foaf:Image"
+							src="https://nosotros.gfi.es/system/files/styles/user_64x64px/private/pictures/picture-7771-1565685125.jpg?itok=8BAAoVn-"
+							alt="Imagen de sergio.romero" class="help-assistant-image">
+						<span class="help-assistant-message">Bienvenido al juego,
+							este asistente te prestará ayuda según avances durante el juego.</span>
+					</div>
+					<div class="help-message-block">
+						<img typeof="foaf:Image"
+							src="https://nosotros.gfi.es/system/files/styles/user_64x64px/private/pictures/picture-7771-1565685125.jpg?itok=8BAAoVn-"
+							alt="Imagen de sergio.romero" class="help-assistant-image">
+						<span class="help-assistant-message">Minimiza este cuadro o retiralo usando el interrogante.</span>
+					</div>
+					<!-- <div class="help-message-block">
+						<img typeof="foaf:Image"
+							src="https://nosotros.gfi.es/system/files/styles/user_64x64px/private/pictures/picture-7771-1565685125.jpg?itok=8BAAoVn-"
+							alt="Imagen de sergio.romero" class="help-assistant-image">
+						<span class="help-assistant-message">Puedes pedir ayuda
+							pulsando el botón "pedir pistas", pero procura usarla cuando ya no sepas
+							como continuar.</span>
+					</div> -->
+					<div class="help-message-block">
+						<img typeof="foaf:Image"
+							src="https://nosotros.gfi.es/system/files/styles/user_64x64px/private/pictures/picture-7771-1565685125.jpg?itok=8BAAoVn-"
+							alt="Imagen de sergio.romero" class="help-assistant-image">
+						<span class="help-assistant-message">¡Suerte! y recuerda, ve siempre al fuente.</span> <!--empleado.apellido@empresa.ficticia
+
+79884993Y1583758966 -->
+					</div>
+				</div>
+				<!--<div class="help-assistant-ask-help-block" id="ask-help">
+					<input type="submit" value="Pedir pista"
+						class="help-assistant-ask-help js-more-help"> -->
+				</div>
+			</div>
+		</div>
+		<div class="l-main">
+			<aside class="l-region l-region--sidebar-second">
+				<div id="block-user-login" role="form"
+					class="block block--user block--user-login">
+					<h2 class="block__title">Inicio de sesión</h2>
+					<div class="block__content">
+						<div>
+							<div class="form-item form-type-textfield form-item-name">
+								<label for="edit-name">Email<span class="form-required"
+									title="Este campo es obligatorio.">*</span></label> <input type="text"
+									id="edit-name" name="name" value="" size="15" maxlength="60"
+									class="form-text required">
+							</div>
+							<div class="form-item form-type-password form-item-pass">
+								<label for="edit-pass">Contraseña <span
+									class="form-required" title="Este campo es obligatorio.">*</span></label>
+								<input type="password" id="edit-pass" name="pass" size="15"
+									maxlength="128" class="form-text required">
+							</div>
+							<div class="form-actions form-wrapper" id="edit-actions">
+								<input type="submit" id="edit-submit" value="Iniciar sesión"
+									class="form-submit js-login">
+							</div>
+							<div class="message-block">
+								<p class="message error-form" id="error-user">Usuario
+									incorrecto</p>
+								<p class="message error-form" id="error-password">Contraseña
+									incorrecta</p>
+							</div>
+							<a href="./vistas/resetPassword.html">Resetear
+								contraseña</a>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</div>
+	<footer class="l-footer" style="display: block !important"
+		role="contentinfo">
+		<div class="l-region l-region--footer">
+			<div id="block-block-15" class="block block--block block--block-15">
+				<div class="block__content">
+					<div class="opensource-block">
+						<p style="margin: 0; padding-left: 4px;">
+							<i class="fab fa-osi" style="font-size: 20px;"></i> Código
+							abierto, puedes acceder a él desde <a href="https://github.com/"
+								target="_blank">https://github.com</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

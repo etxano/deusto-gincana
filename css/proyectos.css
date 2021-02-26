@@ -1,0 +1,31 @@
+.projects-team-block {
+	display: block;
+	width: 100%;
+}
+
+.project-title {
+	color: #00ab9b;
+	font-size: 1.3em;
+	text-decoration: underline;
+}
+
+@media only screen and (min-width: 1024px) {
+	.projects-page {
+		margin-top: 15% !important;
+	}
+	
+	.projects-team-block {
+		display: flex;
+	}
+	
+	.projects-team-resp {
+		display: flex;
+		margin-right: 210px;
+		width: calc(1/ 3 * 100%);
+	}
+	
+	.projects-team-employee {
+		display: flex;
+		width: calc(2/ 3 * 100%);
+	}
+}

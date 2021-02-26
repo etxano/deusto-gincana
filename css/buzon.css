@@ -1,0 +1,136 @@
+.email-message-block {
+	width: 100%;
+}
+
+.email-message-element {
+	align-items: center;
+	border: 1px solid #ccc;
+	color: black;
+	display: flex;
+	padding: 4px 6px;
+	cursor: pointer;
+	text-decoration: none;
+	width: 100%;
+}
+
+.email-message-element:not(:first-child) {
+	border-top: none;
+}
+
+.email-message-element--selected {
+	border-left: 4px solid #4a5559;
+	background-color: #00ab9b;
+	color: white;
+}
+
+.email-message-content {
+	width: 100%;
+}
+
+.email-message-content-description {
+	display: flex;
+	justify-content: space-between;
+	line-height: 1.5em;
+	margin: 0;
+}
+
+.email-message-email {
+	background-color: #faf9f8;
+	color: black;
+	height: 0;
+	min-height: 0;
+	opacity: 0;
+	transition: min-height .5s ease-in, visibility .5s, opacity .5s linear;
+	visibility: hidden;
+	width: 100%;
+}
+
+.email-message-email--selected {
+	min-height: 260px;
+	opacity: 1;
+	padding: 10px 20px;
+	transition: min-height .5s ease-out, visibility .25s, opacity .25s
+		linear;
+	visibility: visible;
+}
+
+.email-message-email-image {
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	margin-right: 8px;
+	height: 35px;
+	width: 35px;
+}
+
+.email-message-email-content {
+	border: 1px solid #ccc;
+	background-color: white;
+	max-height: 240px;
+	min-height: 200px;
+	padding: 10px;
+	overflow: auto;
+}
+
+.email-message-email-content::-webkit-scrollbar {
+	width: 4px;
+}
+
+.email-message-email-content::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+.email-message-email-content::-webkit-scrollbar-thumb {
+	background: #00ab9b;
+}
+
+.email-message-email-header {
+	display: flex;
+	align-items: center;
+}
+
+.email-message-email-sender {
+	line-height: .5em;
+}
+
+.email-message-email-content-description {
+	line-height: 1.5em;
+	margin: 0;
+	padding: 20px;
+}
+
+.buzon-email-page {
+	padding: 1em 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+	.email-message-email-image {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.buzon-email-page {
+		padding: 1em 1.5em;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.email-message-element:hover {
+		background-color: #ccc;
+	}
+	.email-message-email--selected {
+		min-height: 220px;
+	}
+	.email-message-email-content::-webkit-scrollbar-track,
+		.email-message-email-content::-webkit-scrollbar-thumb {
+		opacity: 0;
+		transition: visibility 0s, opacity .25s linear;
+		visibility: hidden;
+	}
+	.email-message-email-content:hover::-webkit-scrollbar-track,
+		.email-message-email-content:hover::-webkit-scrollbar-thumb {
+		opacity: 1;
+		visibility: visible;
+	}
+}

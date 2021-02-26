@@ -1,0 +1,12 @@
+.form-submit {
+	border: 1px solid #00ab9b;
+	border-radius: 6px;
+	background-color: white;
+	padding: 10px 20px;
+}
+
+.form-submit:hover {
+	border: 1px solid #ccc;
+	background-color: #00ab9b;
+	color: white;
+}
